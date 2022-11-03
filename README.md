@@ -1,2 +1,2 @@
-# interactive-rating-component-main
+# interactive-rating-component
  Small project to practice handling user interactions and updating the DOM.
