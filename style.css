@@ -117,6 +117,7 @@ h2 {
    width: 15px;
    height: 15px;
 }
+
 .container--image.circle {
    cursor: default;
 }
@@ -128,6 +129,11 @@ h2 {
 
 .container--rating--rating:hover {
    background-color: var(--medium-grey);
+   color: white;
+}
+
+.active {
+   background-color: var(--orange);
    color: white;
 }
 
@@ -147,38 +153,26 @@ h2 {
    color: var(--orange);
 }
 
-.active {
-   background-color: var(--orange);
-   color: white;
-}
-
 .container-two-display {
    display: none;
 }
 
 .container-two {
    position: relative;
-   margin: 50px top;
-
    text-align: center;
-   justify-content: space-between;
    align-items: center;
-}
-
-.container--image-thanks {
-   display: block;
-   width: 160px;
 }
 
 .image-thanks {
    background-image: url(images/illustration-thank-you.svg);
    background-size: contain;
    background-repeat: no-repeat;
+   width: 160px;
    height: 120px;
 }
 
 .fade-in {
-   animation: fadeIn 1s, slideIn 1s;
+   animation: fadeIn 1.5s, slideIn 1.5s;
 }
 
 @keyframes fadeIn {
@@ -188,7 +182,7 @@ h2 {
 
 @keyframes slideIn {
    0% {
-      transform: translateY(-10px);
+      transform: translateY(-20px);
    }
    100% {
       transform: translateY(0);
