@@ -9,10 +9,12 @@ const three = document.querySelector(".three");
 const four = document.querySelector(".four");
 const five = document.querySelector(".five");
 
-let rating;
-
 evaluation.forEach((button) => {
    button.addEventListener("click", () => {
+      evaluation.forEach(element => {
+         element.classList.toggle("container--rating--rating")
+         element.classList.remove("active")
+      })
       button.classList.toggle("container--rating--rating")
       button.classList.toggle("active")
    })
@@ -22,18 +24,18 @@ submit.addEventListener("click", () => {
    containerTwo.classList.toggle("container-two-display")
 })
 
-one.addEventListener("click", ()=> {
+one.addEventListener("click", () => {
    ratingValue.textContent = "1";
 })
-two.addEventListener("click", ()=> {
+two.addEventListener("click", () => {
    ratingValue.textContent = "2";
 })
-three.addEventListener("click", ()=> {
+three.addEventListener("click", () => {
    ratingValue.textContent = "3";
 })
-four.addEventListener("click", ()=> {
+four.addEventListener("click", () => {
    ratingValue.textContent = "4";
 })
-five.addEventListener("click", ()=> {
+five.addEventListener("click", () => {
    ratingValue.textContent = "5";
 })
